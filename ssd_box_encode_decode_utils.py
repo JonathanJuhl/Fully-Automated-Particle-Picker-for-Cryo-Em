@@ -141,7 +141,7 @@ def greedy_nms(y_pred_decoded, iou_threshold=0.45, coords='minmax'):
     '''
     Perform greedy non-maximum suppression on the input boxes.
 
-    Greedy NMS works by selecting the box with the highest score and
+
     removing all boxes around it that are too close to it measured by IoU-similarity.
     Out of the boxes that are left over, once again the one with the highest
     score is selected and so on, until no boxes with too much overlap are left.
